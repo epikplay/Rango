@@ -21,3 +21,9 @@ class Page(models.Model):
 
     def __str__(self):
         return self.title
+
+    def _url(self):
+        return self.url
+
+    def _category(self):
+        return self.category
